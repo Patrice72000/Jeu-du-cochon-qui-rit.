@@ -428,7 +428,25 @@ html,body{min-height:100%;background:#86c9e8 url("data:image/svg+xml;base64,PHN2
   }
 }
 
-</style></head><body>
+</style>
+<style>
+/* Positionner le bouton au milieu de l'espace situé sous le message de jeu. */
+#gameContainer .game-panel {
+  display: flex !important;
+  flex-direction: column !important;
+}
+#gameContainer #rollButton {
+  flex: 0 0 auto !important;
+  align-self: center !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+#gameContainer #rollButton + br {
+  display: none !important;
+}
+</style>
+
+</head><body>
 <div class="start-screen" id="startScreen"><div class="start-card">
 <h1>🐷 LE COCHON QUI RIT 🐷</h1><p>Prêt à jouer contre le Bug Le Porc ?</p>
 <p></p>
